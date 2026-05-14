@@ -1,53 +1,72 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: #fafafa;
   color: #222;
+  background: #fff;
 }
 
-.layout {
-  display: flex;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-.sidebar {
-  width: 260px;
-  padding-right: 40px;
-}
-
-.sidebar img {
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.sidebar h2 {
-  margin-top: 0;
-}
-
-.sidebar a {
-  display: block;
-  margin: 6px 0;
-  color: #0366d6;
-  text-decoration: none;
-}
-
-.sidebar a:hover {
-  text-decoration: underline;
-}
-
-.content {
-  flex: 1;
   background: white;
-  padding: 30px;
+  padding: 15px 30px;
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #0077cc;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  background: linear-gradient(to bottom, #f0f0f0, #ffffff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: #555;
+}
+
+/* SECTIONS */
+.section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* FULL WIDTH IMAGE */
+.full-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 60px 0;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
-
-h1, h2 {
-  margin-top: 0;
-}
-
-body { background: #eee; }
