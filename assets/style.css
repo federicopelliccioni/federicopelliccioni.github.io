@@ -11,20 +11,27 @@ body {
   top: 0;
   width: 100%;
   background: white;
-  padding: 15px 80px 15px 30px;
+  padding: 15px 30px;
   display: flex;
-  justify-content: flex-end;   /* 🔥 sposta tutto a destra */
-  gap: 20px;
+  justify-content: space-between;   /* 🔥 divide sinistra e destra */
+  align-items: center;
   border-bottom: 1px solid #eee;
   z-index: 1000;
 }
 
-.nav-spacer {
+/* Spazio a sinistra */
+.nav-left {
   flex: 1;
 }
 
+/* Contenitore dei link a destra */
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+
 /* LINK NAVBAR CON EFFETTO BAGLIORE */
-.navbar a {
+.nav-right a {
   color: #333;
   text-decoration: none;
   font-weight: 500;
@@ -34,15 +41,14 @@ body {
   transition: color 0.2s ease, box-shadow 0.3s ease;
 }
 
-/* 🔥 Effetto “tocco d’acqua” */
 /* Hover: bagliore grigio morbido */
-.navbar a:hover {
+.nav-right a:hover {
   color: #444;
   box-shadow: 0 0 10px rgba(120, 120, 120, 0.35);
 }
 
 /* Click: bagliore leggermente più intenso */
-.navbar a:active {
+.nav-right a:active {
   box-shadow: 0 0 14px rgba(120, 120, 120, 0.45);
   transform: scale(0.97);
 }
