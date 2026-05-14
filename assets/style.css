@@ -19,6 +19,10 @@ body {
   z-index: 1000;
 }
 
+.nav-spacer {
+  flex: 1;
+}
+
 /* LINK NAVBAR CON EFFETTO BAGLIORE */
 .navbar a {
   color: #333;
