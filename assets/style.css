@@ -13,19 +13,33 @@ body {
   background: white;
   padding: 15px 30px;
   display: flex;
+  justify-content: flex-end;   /* 🔥 sposta tutto a destra */
   gap: 20px;
   border-bottom: 1px solid #eee;
   z-index: 1000;
 }
 
+/* LINK NAVBAR CON EFFETTO BAGLIORE */
 .navbar a {
   color: #333;
   text-decoration: none;
   font-weight: 500;
+  position: relative;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: color 0.2s ease, box-shadow 0.3s ease;
 }
 
+/* 🔥 Effetto “tocco d’acqua” */
 .navbar a:hover {
   color: #0077cc;
+  box-shadow: 0 0 12px rgba(0, 119, 204, 0.4);
+}
+
+/* 🔥 Effetto click: un bagliore più intenso che svanisce */
+.navbar a:active {
+  box-shadow: 0 0 18px rgba(0, 119, 204, 0.6);
+  transform: scale(0.97);
 }
 
 /* HERO */
