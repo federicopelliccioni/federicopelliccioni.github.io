@@ -18,7 +18,7 @@ body {
 
 /* Contenitore che limita la larghezza */
 .nav-container {
-  max-width: 1100px;      /* 🔥 limita la larghezza */
+  max-width: 900px;      /* 🔥 limita la larghezza */
   margin: 0 auto;         /* 🔥 centra tutto */
   padding: 0 40px;        /* 🔥 spazio dai bordi */
   display: flex;
