@@ -11,27 +11,23 @@ body {
   top: 0;
   width: 100%;
   background: white;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;   /* 🔥 divide sinistra e destra */
-  align-items: center;
+  padding: 15px 0;
   border-bottom: 1px solid #eee;
   z-index: 1000;
 }
 
-/* Spazio a sinistra */
-.nav-left {
-  flex: 1;
-}
-
-/* Contenitore dei link a destra */
-.nav-right {
+/* Contenitore che limita la larghezza */
+.nav-container {
+  max-width: 1100px;      /* 🔥 limita la larghezza */
+  margin: 0 auto;         /* 🔥 centra tutto */
+  padding: 0 40px;        /* 🔥 spazio dai bordi */
   display: flex;
+  justify-content: flex-end;
   gap: 20px;
 }
 
 /* LINK NAVBAR CON EFFETTO BAGLIORE */
-.nav-right a {
+.nav-container a {
   color: #333;
   text-decoration: none;
   font-weight: 500;
@@ -42,16 +38,17 @@ body {
 }
 
 /* Hover: bagliore grigio morbido */
-.nav-right a:hover {
+.nav-container a:hover {
   color: #444;
   box-shadow: 0 0 10px rgba(120, 120, 120, 0.35);
 }
 
 /* Click: bagliore leggermente più intenso */
-.nav-right a:active {
+.nav-container a:active {
   box-shadow: 0 0 14px rgba(120, 120, 120, 0.45);
   transform: scale(0.97);
 }
+
 
 /* HERO */
 .hero {
