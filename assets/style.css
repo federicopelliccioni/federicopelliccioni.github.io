@@ -11,7 +11,7 @@ body {
   top: 0;
   width: 100%;
   background: white;
-  padding: 15px 30px;
+  padding: 15px 60px 15px 30px;
   display: flex;
   justify-content: flex-end;   /* 🔥 sposta tutto a destra */
   gap: 20px;
@@ -31,14 +31,15 @@ body {
 }
 
 /* 🔥 Effetto “tocco d’acqua” */
+/* Hover: bagliore grigio morbido */
 .navbar a:hover {
-  color: #0077cc;
-  box-shadow: 0 0 12px rgba(0, 119, 204, 0.4);
+  color: #444;
+  box-shadow: 0 0 10px rgba(120, 120, 120, 0.35);
 }
 
-/* 🔥 Effetto click: un bagliore più intenso che svanisce */
+/* Click: bagliore leggermente più intenso */
 .navbar a:active {
-  box-shadow: 0 0 18px rgba(0, 119, 204, 0.6);
+  box-shadow: 0 0 14px rgba(120, 120, 120, 0.45);
   transform: scale(0.97);
 }
 
