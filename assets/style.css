@@ -31,6 +31,18 @@ body {
   color: rgba(120, 120, 120, 0.35);
   transform: scale(1.15);
 }
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: 0.2s ease;
+}
+
+.social-icons img:hover {
+  opacity: 1;
+  filter: drop-shadow(0 0 3px rgba(120,120,120,0.35));
+}
 
 /* LINK NAVBAR CON EFFETTO BAGLIORE */
 .nav-container a {
