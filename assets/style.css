@@ -143,10 +143,10 @@ body {
 
 /* IMMAGINE A SINISTRA */
 .about-image {
-  flex: 0.7;              /* immagine più piccola */
-  max-height: 380px;      /* controlla l’altezza */
-  padding-top: 40px;      /* buffer superiore */
-  overflow: hidden;       /* taglio pulito */
+  flex: 0.7;          /* immagine più piccola */
+  max-height: 350px;  /* dimezzata */
+  padding-top: 40px;  /* buffer superiore */
+  overflow: hidden;
 }
 
 .about-image img {
@@ -183,7 +183,7 @@ body {
   }
 
   .about-image {
-    height: 260px;
+    height: 240px;
     padding-top: 20px;
   }
 
@@ -192,3 +192,4 @@ body {
     text-align: center;
   }
 }
+
