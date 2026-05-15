@@ -7,23 +7,29 @@ body {
 
 /* NAVBAR */
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: white;
-  padding: 15px 0;
-  border-bottom: 1px solid #eee;
-  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* icone a sinistra, link a destra */
+  align-items: center;
+  padding: 10px 20px;
 }
 
-/* Contenitore che limita la larghezza */
-.nav-container {
-  max-width: 1500px;      /* 🔥 limita la larghezza */
-  margin: 0 auto;         /* 🔥 centra tutto */
-  padding: 0 40px;        /* 🔥 spazio dai bordi */
+/* ICONE */
+.social-icons {
   display: flex;
-  justify-content: flex-end;
-  gap: 20px;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-icons .icon svg {
+  width: 24px;
+  height: 24px;
+  color: #333;
+  transition: 0.2s ease;
+}
+
+.social-icons .icon:hover svg {
+  color: #0077b5;
+  transform: scale(1.15);
 }
 
 /* LINK NAVBAR CON EFFETTO BAGLIORE */
