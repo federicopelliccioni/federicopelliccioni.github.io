@@ -143,9 +143,9 @@ body {
 
 /* IMMAGINE A SINISTRA */
 .about-image {
-  flex: 0.7;          /* immagine più piccola */
-  max-height: 350px;  /* dimezzata */
-  padding-top: 40px;  /* buffer superiore */
+  flex: 0.7 !important;          /* immagine più piccola */
+  max-height: 350px !important;  /* dimezzata */
+  padding-top: 40px !important;  /* buffer superiore */
   overflow: hidden;
 }
 
