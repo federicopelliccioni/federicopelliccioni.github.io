@@ -20,19 +20,9 @@ body {
   align-items: center;
 }
 
-.social-icons .icon svg {
-  width: 24px;
-  height: 24px;
-  color: #333;
-  transition: 0.2s ease;
-}
-
-.social-icons .icon:hover svg {
-  color: rgba(120, 120, 120, 0.35);
-  transform: scale(1.15);
-}
+/* PNG icons */
 .social-icons img {
-  width: 24px;
+  width: 24px;        /* reduce icon size */
   height: 24px;
   object-fit: contain;
   opacity: 0.8;
