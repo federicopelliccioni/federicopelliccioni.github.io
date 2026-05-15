@@ -66,6 +66,21 @@ body {
   position: relative;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(255,255,255,0.15),
+    rgba(255,255,255,0.05)
+  );
+  z-index: 1;
+}
+
+.hero {
+  background-attachment: fixed;
+}
+
 /* SECTIONS */
 .section {
   max-width: 900px;
