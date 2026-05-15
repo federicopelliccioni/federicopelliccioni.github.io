@@ -8,7 +8,7 @@ body {
 /* NAVBAR */
 .navbar {
   display: flex;
-  justify-content: space-between; /* icone a sinistra, link a destra */
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
 }
@@ -20,16 +20,20 @@ body {
   align-items: center;
 }
 
-/* PNG icons */
-.social-icons img {
-  width: 24px;        /* reduce icon size */
-  height: 24px;
+/* PNG + SVG icons */
+.social-icons img,
+.social-icons .icon img,
+.social-icons .icon svg {
+  width: 24px !important;
+  height: 24px !important;
   object-fit: contain;
   opacity: 0.8;
   transition: 0.2s ease;
 }
 
-.social-icons img:hover {
+.social-icons img:hover,
+.social-icons .icon img:hover,
+.social-icons .icon svg:hover {
   opacity: 1;
   filter: drop-shadow(0 0 3px rgba(120,120,120,0.35));
 }
