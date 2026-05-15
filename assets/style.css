@@ -53,7 +53,7 @@ body {
 /* HERO */
 .hero {
   height: 80vh;
-  background: grey !important;
+  background: url("assets/hero-bg.jpg") center/cover no-repeat !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,6 +70,7 @@ body {
   font-size: 1.3rem;
   color: #555;
 }
+
 .hero::before {
   content: "";
   position: absolute;
@@ -77,13 +78,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: none; /* 🔥 leggero scurimento */
+  background: none; /* 🔥 overlay disattivato */
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2; /* sopra l’overlay */
+  z-index: 2; /* sopra l’immagine */
 }
 
 /* SECTIONS */
