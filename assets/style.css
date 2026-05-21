@@ -192,4 +192,27 @@ body {
     text-align: center;
   }
 }
+.project-section {
+  padding: 60px 0;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.project-container.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-image img {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.project-text {
+  max-width: 600px;
+}
 
