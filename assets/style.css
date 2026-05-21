@@ -1,3 +1,6 @@
+/* --------------------------------------------------
+   BASE
+-------------------------------------------------- */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -5,7 +8,9 @@ body {
   background: #fff;
 }
 
-/* NAVBAR */
+/* --------------------------------------------------
+   NAVBAR
+-------------------------------------------------- */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -13,7 +18,7 @@ body {
   padding: 10px 20px;
 }
 
-/* ICONE */
+/* Icone social */
 .social-icons {
   display: flex;
   gap: 15px;
@@ -24,8 +29,8 @@ body {
 .social-icons img,
 .social-icons .icon img,
 .social-icons .icon svg {
-  width: 24px !important;
-  height: 24px !important;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
   opacity: 0.8;
   transition: 0.2s ease;
@@ -38,7 +43,7 @@ body {
   filter: drop-shadow(0 0 3px rgba(120,120,120,0.35));
 }
 
-/* LINK NAVBAR CON EFFETTO BAGLIORE */
+/* Link navbar */
 .nav-container a {
   color: #333;
   text-decoration: none;
@@ -49,27 +54,26 @@ body {
   transition: color 0.2s ease, box-shadow 0.3s ease;
 }
 
-/* Hover: bagliore grigio morbido */
 .nav-container a:hover {
   color: #444;
   box-shadow: 0 0 10px rgba(120, 120, 120, 0.35);
 }
 
-/* Click: bagliore leggermente più intenso */
 .nav-container a:active {
   box-shadow: 0 0 14px rgba(120, 120, 120, 0.45);
   transform: scale(0.97);
 }
 
-
-/* HERO */
+/* --------------------------------------------------
+   HERO
+-------------------------------------------------- */
 .hero {
   height: 80vh;
   background-image: url("hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* 🔥 questa fa scorrere le sezioni sopra */
+  background-attachment: fixed;
 
   display: flex;
   justify-content: center;
@@ -79,19 +83,6 @@ body {
   position: relative;
 }
 
-
-/* SECTIONS */
-.section {
-  max-width: 900px;
-  margin: 80px auto;
-  padding: 0 20px;
-}
-
-
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
 .hero-content {
   display: flex;
   flex-direction: row;
@@ -102,9 +93,9 @@ body {
 .hero-photo {
   width: 140px;
   height: 140px;
-  border-radius: 50%;      /* 🔥 foto circolare */
+  border-radius: 50%;
   object-fit: cover;
-  border: 3px solid white; /* opzionale, elegante */
+  border: 3px solid white;
 }
 
 .hero-text h1 {
@@ -118,7 +109,21 @@ body {
   color: #444;
 }
 
-/* FULL WIDTH IMAGE */
+/* --------------------------------------------------
+   SECTIONS
+-------------------------------------------------- */
+.section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Full-width image */
 .full-image img {
   width: 100%;
   height: auto;
@@ -127,7 +132,9 @@ body {
   border-radius: 8px;
 }
 
-/*ABOUT SECTION*/
+/* --------------------------------------------------
+   ABOUT SECTION
+-------------------------------------------------- */
 .about-section {
   padding: 0;
   background: white;
@@ -141,11 +148,11 @@ body {
   min-height: 60vh;
 }
 
-/* IMMAGINE A SINISTRA */
+/* Immagine */
 .about-image {
-  flex: 0.7 !important;          /* immagine più piccola */
-  max-height: 350px !important;  /* dimezzata */
-  padding-top: 40px !important;  /* buffer superiore */
+  flex: 0.7;
+  max-height: 350px;
+  padding-top: 40px;
   overflow: hidden;
 }
 
@@ -153,10 +160,9 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
-/* TESTO A DESTRA */
+/* Testo */
 .about-text {
   flex: 1;
   padding: 80px 60px;
@@ -176,7 +182,7 @@ body {
   max-width: 500px;
 }
 
-/* MOBILE */
+/* Mobile */
 @media (max-width: 900px) {
   .about-container {
     flex-direction: column;
@@ -192,6 +198,10 @@ body {
     text-align: center;
   }
 }
+
+/* --------------------------------------------------
+   PROJECT SECTIONS
+-------------------------------------------------- */
 .project-section {
   padding: 60px 0;
 }
@@ -215,4 +225,3 @@ body {
 .project-text {
   max-width: 600px;
 }
-
