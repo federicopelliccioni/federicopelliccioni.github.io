@@ -7,27 +7,16 @@ body {
   color: #222;
   background: #fff;
 }
-html {
-  scroll-behavior: smooth;
-}
 
 /* --------------------------------------------------
    NAVBAR
 -------------------------------------------------- */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: white;
-  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
-body {
-  padding-top: 70px;
-}
-
 
 /* Icone social */
 .social-icons {
@@ -236,7 +225,3 @@ body {
 .project-text {
   max-width: 600px;
 }
-section {
-  scroll-margin-top: 80px;
-}
-
