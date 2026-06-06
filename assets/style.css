@@ -246,25 +246,69 @@ body {
    PROJECT SECTIONS
 -------------------------------------------------- */
 .project-section {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
 .project-container {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .project-container.reverse {
   flex-direction: row-reverse;
 }
 
-.project-image img {
-  width: 350px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+/* IMMAGINI GRANDI (50% della pagina) */
+.project-image {
+  flex: 1;
 }
 
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
+
+/* TESTO */
 .project-text {
+  flex: 1;
   max-width: 600px;
+}
+
+.project-text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.project-text p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+/* --------------------------------------------------
+   MOBILE
+-------------------------------------------------- */
+@media (max-width: 900px) {
+
+  .project-container,
+  .project-container.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-image img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .project-text {
+    max-width: 100%;
+    padding: 0 10px;
+  }
 }
