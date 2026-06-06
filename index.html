@@ -3,8 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <title>Federico Pelliccioni</title>
+
+  <!-- Canonical URL (fix cronologia/back button) -->
+  <link rel="canonical" href="https://federicopelliccioni.github.io/">
+
+  <!-- Mobile optimization -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- SEO -->
+  <meta name="description" content="Federico Pelliccioni · PhD Candidate in avian ecology, climate change, morphology and phenology research.">
+  <meta name="keywords" content="Federico Pelliccioni, ornithology, avian ecology, climate change, morphology, phenology, research">
+  <meta name="author" content="Federico Pelliccioni">
+
+  <!-- OpenGraph (social preview) -->
+  <meta property="og:title" content="Federico Pelliccioni">
+  <meta property="og:description" content="PhD Candidate · Avian ecology · Climate change research">
+  <meta property="og:image" content="https://federicopelliccioni.github.io/assets/me.jpg">
+  <meta property="og:url" content="https://federicopelliccioni.github.io/">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Font smoothing (migliora la resa su mobile e Mac) -->
+  <style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+
+  <!-- Redirect automatico da /index.html → / -->
+  <script>
+    if (location.pathname.endsWith("index.html")) {
+      location.replace("/");
+    }
+  </script>
+
+  <!-- CSS principale -->
   <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
 
 <!-- NAVBAR -->
