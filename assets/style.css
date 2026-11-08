@@ -261,18 +261,14 @@ main { padding-top: 60px; } /* room for the fixed header */
     grid-column: 2;
     grid-row: 1;
 }
-
 .species-reverse .species-text {
     grid-column: 1;
     grid-row: 1;
 }
-
 .species-photo { margin: 0; }
 .species-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); }
-
 .species-text h3 { font-size: clamp(2rem, 3.5vw, 2.6rem); margin-bottom: 0.2em; }
 .species-text > p:last-child { max-width: 58ch; }
-
 .binomial { font-size: 1.15rem; margin-bottom: 0.4em; }
 .vernacular { color: var(--muted); font-size: 0.95rem; margin-left: 0.5em; }
 .site {
