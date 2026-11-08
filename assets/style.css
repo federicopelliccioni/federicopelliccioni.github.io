@@ -257,7 +257,14 @@ main { padding-top: 60px; } /* room for the fixed header */
   align-items: center;
   margin-top: clamp(40px, 6vw, 72px);
 }
-.species-reverse .species-photo { order: 2; }
+.species-reverse .species-photo {
+  grid-column: 2;
+}
+
+.species-reverse .species-text {
+  grid-column: 1;
+}
+
 
 .species-photo { margin: 0; }
 .species-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); }
